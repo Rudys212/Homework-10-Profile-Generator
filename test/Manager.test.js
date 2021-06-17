@@ -1,3 +1,5 @@
+const employee = require("./lib/manager.js");
+
 // *name`
 
 // * `id`
