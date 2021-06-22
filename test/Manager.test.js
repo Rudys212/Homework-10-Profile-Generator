@@ -1,21 +1,20 @@
-const employee = require("./lib/manager.js");
+const Manager = require("../lib/Manager");
+const Employee = require("../lib/Employee");
 
-// *name`
+test("Can set office number via constructor argument", () => {
+  const testValue = 100;
+  const e = new Manager("Bob", 1, "test@test.com", testValue);
+  expect(e.officeNumber).toBe(testValue);
+});
 
-// * `id`
+test('getRole() should return "Manager"', () => {
+  const testValue = "Manager";
+  const e = new Manager("Bob", 1, "test@test.com", 100);
+  expect(e.getRole()).toBe(testValue);
+});
 
-// * `email`
-
-// * `getName()`
-
-// * `getId()`
-
-// * `getEmail()`
-
-// * `getRole()`&mdash;returns `'Employee'`
-
-// In addition to `Employee`'s properties and methods, `Manager` will also have the following:
-
-// * `officeNumber`
-
-// * `getRole()`&mdash;overridden to return `'Manager'`
+test("getOffice() should return office number", () => {
+  const testValue = 100;
+  const e = new Manager("Bob", 1, "test@test.com", testValue);
+  expect(e.getOfficeNumber()).toBe(testValue);
+});
