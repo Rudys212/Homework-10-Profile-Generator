@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,10 @@
   },
   "homepage": "https://github.com/Rudys212/Homework-10-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.1.1"
+    "inquirer": "^8.1.1",
+    "start": "^5.1.0"
   },
   "devDependencies": {
-    "jest": "^27.0.4"
+    "jest": "^27.0.5"
   }
 }

@@ -31,14 +31,14 @@ test("Can get name via getName()", () => {
 
 test("Can get id via getId()", () => {
   const testValue = 100;
-  const e = new Employee("Bob", 1, testValue);
+  const e = new Employee("Bob", testValue);
   expect(e.getId()).toBe(testValue);
 });
 
 test("Can get email via getEmail()", () => {
   const testValue = "test@test.com";
   const e = new Employee("Bob", 1, testValue);
-  expect(e.getId()).toBe(testValue);
+  expect(e.getEmail()).toBe(testValue);
 });
 
 test('getRole() should return "Employee"', () => {
