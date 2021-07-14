@@ -10,8 +10,8 @@ const Manager = require("./lib/Manager");
 // const managerSec = require("./src/templates/manager.html");
 // const employeeSec = require("./dist/employeeHtml");
 const path = require("path");
-const outputPath = path.resolve(__dirname, "output.html");
-const OUTPUT_DIR = path.join(outputPath, "../src/templates/main.html");
+const outputPath = path.resolve(__dirname, "output", "output.html");
+// const OUTPUT_DIR = path.join(outputPath, "../src/templates/mainHtml.js");
 
 const render = require("./lib/htmlRender");
 
@@ -162,7 +162,7 @@ function addIntern() {
     });
 }
 
-async function fullTeam() {
+function fullTeam() {
   fs.writeFileSync(outputPath, render(employees), function (err) {
     if (err) {
       return console.log(err);
