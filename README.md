@@ -1,4 +1,4 @@
-# **Profile Generator-Homework 10**
+# **team-profile-generator**
 
 ## **Description**  
 -------------
